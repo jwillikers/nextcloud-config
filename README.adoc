@@ -1,0 +1,39 @@
+= Nextcloud Config
+:Nextcloud: https://nextcloud.com/[Nextcloud]
+
+Configuration for my {Nextcloud} server.
+
+These are configuration files for my Nextcloud server, which is run via several containers.
+See the https://github.com/jwillikers/home-lab-helm[home-lab-helm] repository for the containers' configuration.
+Environment variables defined in that configuration cover most of the Nextcloud configuration. 
+A couple of files are still required, so they are kept here.
+
+== Usage
+
+The files provided in the `etc` subdirectory are meant to be mounted inside the Nextcloud container under the `/usr/local` directory.
+The home-lab-helm Kubernetes configuration expects this repository to be in a specific location.
+Follow these instructions to put the files in the expected location.
+
+. Create the `~/Projects` directory.
+
+. Clone this repository under the `~/Projects` directory.
++
+[,sh]
+----
+git -C ~/Projects clone https://github.com/jwillikers/nextcloud-config.git
+----
+
+== Code of Conduct
+
+The project's Code of Conduct is available in the link:CODE_OF_CONDUCT.adoc[] file.
+
+== License
+
+This project is licensed under the https://creativecommons.org/licenses/by-sa/4.0/legalcode[Creative Commons Attribution-ShareAlike 4.0 International License].
+
+© 2023 Jordan Williams
+
+== Authors
+
+mailto:{email}[{author}]
+
