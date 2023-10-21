@@ -3,6 +3,7 @@
         "adoc",
         "autoconfig",
         "filelocking",
+        "ifdef",
         "jwillikers",
         "Nextcloud",
         "trashbin"
