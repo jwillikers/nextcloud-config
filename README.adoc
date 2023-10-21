@@ -15,6 +15,11 @@ The home-lab-helm Kubernetes configuration expects this repository to be in a sp
 Follow these instructions to put the files in the expected location.
 
 . Create the `~/Projects` directory.
++
+[,sh]
+----
+mkdir -p ~/Projects
+----
 
 . Clone this repository under the `~/Projects` directory.
 +
