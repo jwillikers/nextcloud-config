@@ -11,6 +11,9 @@ A couple of files are still required, so they are kept here.
 == Usage
 
 The files provided in the `etc` subdirectory are meant to be mounted inside the Nextcloud container under the `/usr/local` directory.
+The subdirectory `docker-entrypoint-hooks.d/pre-installation` should be mounted under the root of the container, where it will be executed before installation.
+The hook just concatenates the `/var/www/html/autoconfig.php` with the included `autoconfig.php` file.
+This file includes configuration for things that are not configured automatically through environment variables in the container.
 The home-lab-helm Kubernetes configuration expects this repository to be in a specific location.
 Follow these instructions to put the files in the expected location.
 
