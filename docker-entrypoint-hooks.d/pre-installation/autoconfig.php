@@ -1,10 +1,21 @@
 $AUTOCONFIG = array(
   'filelocking.enabled' => true,
   'default_phone_region' => 'US',
-  'enabledPreviewProviders' => 
-  array (
-    0 => 'OC\\Preview\\Imaginary',
-  ),
+  'enabledPreviewProviders' => [
+    'OC\Preview\BMP',
+    'OC\Preview\GIF',
+    'OC\Preview\Imaginary',
+    'OC\Preview\JPEG',
+    'OC\Preview\Krita',
+    'OC\Preview\MarkDown',
+    'OC\Preview\MP3',
+    'OC\Preview\OpenDocument',
+    'OC\Preview\PNG',
+    'OC\Preview\TXT',
+    'OC\Preview\XBitmap',
+  ],
+  'preview_format' => 'webp',
   'preview_imaginary_url' => 'http://localhost:8088',
+  'preview_max_memory' => 2048,
   'trashbin_retention_obligation' => '7, 30',
 );
