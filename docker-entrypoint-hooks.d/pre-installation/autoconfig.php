@@ -16,6 +16,6 @@ $AUTOCONFIG = array(
   ],
   'preview_format' => 'webp',
   'preview_imaginary_url' => 'http://localhost:8088',
-  'preview_max_memory' => 2048,
+  'preview_max_memory' => 4096,
   'trashbin_retention_obligation' => '7, 30',
 );
