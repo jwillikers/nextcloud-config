@@ -14,8 +14,8 @@ endif::[]
 Configuration for my {Nextcloud} server.
 
 These are configuration files for my Nextcloud server, which is run via several containers.
-See the https://github.com/jwillikers/home-lab-helm[home-lab-helm] repository for the containers' configuration.
-Environment variables defined in that configuration cover most of the Nextcloud configuration. 
+See the https://codeberg.org/jwillikers/home-lab-helm[home-lab-helm] repository for the containers' configuration.
+Environment variables defined in that configuration cover most of the Nextcloud configuration.
 A couple of files are still required, so they are kept here.
 
 == Usage
@@ -31,14 +31,14 @@ Follow these instructions to put the files in the expected location.
 +
 [,sh]
 ----
-mkdir -p ~/Projects
+mkdir --parents ~/Projects
 ----
 
 . Clone this repository under the `~/Projects` directory.
 +
 [,sh]
 ----
-git -C ~/Projects clone https://github.com/jwillikers/nextcloud-config.git
+git -C ~/Projects clone https://codeberg.org/jwillikers/nextcloud-config.git
 ----
 
 == References
@@ -55,7 +55,7 @@ git -C ~/Projects clone https://github.com/jwillikers/nextcloud-config.git
 * https://docs.nextcloud.com/server/latest/admin_manual/installation/server_tuning.html#tune-php-fpm[Nextcloud Admin Manual: Server tuning - Tune PHP-FPM]
 * https://docs.nextcloud.com/server/latest/admin_manual/configuration_files/files_locking_transactional.html[Nextcloud Admin Manual: Transactional file locking]
 * https://github.com/nextcloud/docker[Nextcloud Docker]
-* https://hub.docker.com/_/redis[redis Official Docker Image] 
+* https://hub.docker.com/_/redis[redis Official Docker Image]
 
 .See Also
 * https://github.com/nextcloud/all-in-one[Nextcloud All-in-One]
@@ -73,4 +73,3 @@ This project is licensed under the https://creativecommons.org/licenses/by-sa/4.
 == Authors
 
 mailto:{email}[{author}]
-
